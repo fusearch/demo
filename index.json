@@ -1,0 +1,142 @@
+[
+  {
+    "content": "Multimodal Document Understanding related APIs\n",
+    "description": "",
+    "tags": null,
+    "title": "Document Understanding",
+    "uri": "/document-understanding/"
+  },
+  {
+    "content": "Remove Image Background Remove background from image using artificial intelligence.\napiKey Image file: Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "Remove Image Background",
+    "uri": "/common-services/removebg/"
+  },
+  {
+    "content": "Check the basic information of Chinese ID card, including issuing region, date of birth, gender and validity.\napiKey Photo file: Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "Chinese ID Card OCR",
+    "uri": "/document-understanding/cnocr/"
+  },
+  {
+    "content": "Document Scanner Computer vision based document scanner, take a photo of your documents and frame it.\napiKey Image file: Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "Document Scanner",
+    "uri": "/common-services/docscan/"
+  },
+  {
+    "content": "Machine Translation apiKey Source language [Choose one] English Chinese Target language [Choose one] English Chinese Text to translate Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "Machine Translation",
+    "uri": "/natural-language-processing/translation/"
+  },
+  {
+    "content": "Multimodal Document Understanding related APIs\n",
+    "description": "",
+    "tags": null,
+    "title": "Multimodal Multilingual IR",
+    "uri": "/multimodal-multilingual-search/"
+  },
+  {
+    "content": "Text to Image Playground apiKey Language [Choose one] English Chinese Text Prompt Seed Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "Text to Image",
+    "uri": "/ai-generated-content/text-to-image/"
+  },
+  {
+    "content": "Text to Image - Test Version Playground apiKey Text Prompt Seed Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "Text to Image - Test",
+    "uri": "/ai-generated-content/text-to-image-pre/"
+  },
+  {
+    "content": "Multilingual Web Page Content Extractor A general multilingual web page content extraction. It is used to extract the content of article type web pages, such as news, blog posts, etc.\nPlayground apiKey URL Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "Web Page Content Extraction",
+    "uri": "/document-understanding/extract/"
+  },
+  {
+    "content": "Global Phonenumber Carrier Inquiry A telephone number is a sequence of digits assigned to a landline telephone subscriber station connected to a telephone line or to a wireless electronic telephony device, such as a radio telephone or a mobile telephone, or to other devices for data transmission via the public switched telephone network (PSTN) or other public and private networks.\nPlayground apiKey Region Code Phonenumber Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "Global Phone Carrier",
+    "uri": "/common-services/phonenumber/"
+  },
+  {
+    "content": "MathSolver - Semantic Parsing apiKey Math Question Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "MathSolver - Semantic Parsing",
+    "uri": "/natural-language-processing/mathsolver/"
+  },
+  {
+    "content": "Multimodal Document Understanding related APIs\n",
+    "description": "",
+    "tags": null,
+    "title": "NLP Models",
+    "uri": "/natural-language-processing/"
+  },
+  {
+    "content": "AI-generated content is when a machine creates content for you. AI content often describes written content like blog posts, marketing copy, and articles. AI content generators require some human input like a description, prompt, or parameters.\n",
+    "description": "",
+    "tags": null,
+    "title": "AI-Generated Content",
+    "uri": "/ai-generated-content/"
+  },
+  {
+    "content": "Resident Identity Card The Resident Identity Card Number, also known as China’s ID Card Citizen Identity Number is 18 digits in total, which is composed of a 17 digit body code and one check code. The sequence from left to right is a six-digit address code, an eight-digit birthdate code, a three-digit sequence code, and a one-digit verification code.\nThe checksum The Checksum is the final digit, which confirms the validity of the ID number from the first 17 digits, utilizing ISO 7064:1983, MOD 11-2.\nPlayground apiKey Resident Identity Card Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "Resident Identity Card",
+    "uri": "/common-services/idcard/"
+  },
+  {
+    "content": "Global Bank Card Number A payment card number, primary account number (PAN), or simply a card number, is the card identifier found on payment cards, such as credit cards and debit cards, as well as stored-value cards, gift cards and other similar cards. In some situations the card number is referred to as a bank card number. The card number is primarily a card identifier and may not directly identify the bank account number/s to which the card is/are linked by the issuing entity. The card number prefix identifies the issuer of the card, and the digits that follow are used by the issuing entity to identify the cardholder as a customer and which is then associated by the issuing entity with the customer’s designated bank accounts. In the case of stored-value type cards, the association with a particular customer is only made if the prepaid card is reloadable. Card numbers are allocated in accordance with ISO/IEC 7812. The card number is typically embossed on the front of a payment card, and is encoded on the magnetic stripe and chip, but may also be imprinted on the back of the card.\nBank card number validation - the Luhn algorithm The Luhn algorithm or Luhn formula, also known as the “modulus 10” or “mod 10” algorithm, named after its creator, IBM scientist Hans Peter Luhn, is a simple checksum formula used to validate a variety of identification numbers, such as credit card numbers, IMEI numbers, National Provider Identifier numbers in the United States, Canadian Social Insurance Numbers, Israeli ID Numbers, South African ID Numbers, Swedish National identification numbers, Swedish Corporate Identity Numbers (OrgNr), Greek Social Security Numbers (ΑΜΚΑ), SIM card numbers, European patent application number and survey codes appearing on McDonald’s, Taco Bell, and Tractor Supply Co. receipts. It is described in U.S. Patent No. 2,950,048, granted on August 23, 1960.\nPlayground apiKey Bank Card Number Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "Bank Card Number",
+    "uri": "/common-services/bankcard/"
+  },
+  {
+    "content": "Multimodal Document Understanding related APIs\n",
+    "description": "",
+    "tags": null,
+    "title": "Common Services",
+    "uri": "/common-services/"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Categories",
+    "uri": "/categories/"
+  },
+  {
+    "content": "This is the graphical interface to easily try all our models and apis without writing a single line of code.\nInfo For more information about the API, please see the documentation, and if you’re new please first register and get a free API token.\nMain features TODO\n",
+    "description": "",
+    "tags": null,
+    "title": "FuSearch Playground",
+    "uri": "/"
+  },
+  {
+    "content": "GoboLinux Wiki by NEONsys.org BITS by Dr. Lutz Gollan Pamasol Electrics by Pamasol – Swiss Aerosol Solutions ",
+    "description": "",
+    "tags": null,
+    "title": "Showcase",
+    "uri": "/more/showcase/"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Tags",
+    "uri": "/tags/"
+  }
+]

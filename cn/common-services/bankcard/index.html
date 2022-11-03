@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.104.3">
+    <meta name="generator" content="Relearn 5.3.3+tip">
+    <meta name="description" content="Playground for FuSearch API">
+    <meta name="author" content="zliu">
+    <title>银行卡号校验查询 :: FuSearch API 演示中心</title>
+    <link href="/cn/common-services/bankcard/index.xml" rel="alternate" type="application/rss+xml" title="FuSearch API 演示中心">
+    <link href="/images/logo.svg?1667471325" rel="icon" type="image/svg+xml">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1667471325" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1667471325" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1667471325" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1667471325" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1667471325" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1667471325" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1667471325" rel="stylesheet">
+    <link href="/css/nucleus.css?1667471325" rel="stylesheet">
+    <link href="/css/fonts.css?1667471325" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1667471325" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1667471325" rel="stylesheet">
+    <link href="/css/theme-relearn-light.css?1667471325" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1667471325" rel="stylesheet">
+    <link href="/css/variant.css?1667471325" rel="stylesheet">
+    <link href="/css/print.css?1667471325" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1667471325"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      var index_url="/cn/index.json";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      // some further base stuff
+      var baseUriFull='https:\/\/fusearch.net/';
+      window.variants && variants.init( [ 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
+    </script>
+    <script src="/js/jquery.min.js?1667471325" defer></script>
+  </head>
+  <body class="mobile-support html" data-url="/cn/common-services/bankcard/">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+             <span class="nav nav-next"><i class="fa fa-chevron-right fa-fw"></i></span>
+          </div>
+          <div class="navigation">
+             <a class="nav nav-prev" href="/cn/common-services/idcard/" title="中国身份证查询 (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-github-link">
+            <a class="github-link" title='Edit (CTRL+ALT+w)' href="https://git.iir.ac.cn/fusearch/playground/edit/main/content/common-services/bankcard/_index.cn.md" target="blank">
+              <i class="fas fa-pen fa-fw"></i>
+            </a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/cn/"><span itemprop="name">FuSearch演示中心</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/cn/common-services/"><span itemprop="name">常用AI服务</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">银行卡号校验查询</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#全球银行卡号码校验与信息查询">全球银行卡号码校验与信息查询</a>
+      <ul>
+        <li><a href="#相关资料">相关资料</a></li>
+        <li><a href="#银行卡号校验">银行卡号校验</a></li>
+        <li><a href="#演示">演示</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+          <article class="default">
+<h1>银行卡号校验查询</h1>
+
+<h2 id="全球银行卡号码校验与信息查询">全球银行卡号码校验与信息查询</h2>
+<h3 id="相关资料">相关资料</h3>
+<ul>
+<li><a href="https://ccdcapi.alipay.com/validateAndCacheCardInfo.json?cardNo=6222005865412565805&amp;cardBinCheck=true">alipay</a>银行卡号接口</li>
+<li><a href="https://en.wikipedia.org/wiki/Payment_card_number">Payment card number</a></li>
+</ul>
+<h3 id="银行卡号校验">银行卡号校验</h3>
+<p><a href="https://en.wikipedia.org/wiki/Luhn_algorithm">Luhn检验数字算法</a>（Luhn Check Digit Algorithm），也叫做模数10公式，是一种简单的算法，用于验证银行卡、信用卡号码的有效性算法。对所有大型信用卡公司发行的信用卡都起作用，这些公司包括美国Express、护照、万事达卡、Discover和用餐俱乐部等。这种算法最初是在20世纪60年代由一组数学家制定，现在Luhn检验数字算法属于大众，任何人都可以使用它。</p>
+<p>算法：将每个奇数加倍和使它变为单个的数字，如果必要的话通过减去9和在每个偶数上加上这些值。如果此卡有效，那么结果必须是10的倍数。</p>
+<h3 id="演示">演示</h3>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/monokai.css" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+
+<form action="https://api.nlp.ac.cn/v1/bankcard">
+  <div class="row">
+    <label for="apiKey">apiKey</label>
+    <input type="text" id="apiKey" value="" required />
+  </div>
+  
+  <div class="row">
+      <label for="id">Bank Card Number</label><input type="text" id="id" name="id" value="6222000200124846494" required /></div>
+
+
+  <div class="row">
+    <button type="reset" class="btn btn-primary">Reset</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <span id="loading"></span>
+  </div>
+</form>
+
+<div class="box notices cstyle" id="resp">
+  <div class="box-label">Response Status</div>
+  <div class="box-content" id="status"></div>
+</div>
+
+<div class="highlight">
+  <div id="img-out"></div>
+  <pre class="chroma">
+    <code class="json" id="response"></code>
+  </pre>
+</div>
+
+<script>
+  const codeMap = {2:"box notices cstyle green", 4:"box notices cstyle orange", 5:"box notices cstyle red"};
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const apiKey = document.querySelector("#apiKey");
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+    const loading = document.querySelector("#loading");
+    loading.textContent = "Loading...";
+    
+    let time1 = performance.now();
+    fetch(myForm.action, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded", "X-Api-Key": apiKey.value },
+      body: "x-www-form-urlencoded" == "json"? JSON.stringify(Object.fromEntries(formData)): new URLSearchParams(formData).toString(),
+    })
+    .then((response) => {
+      const idx = parseInt(response.status / 100);
+      if (idx in codeMap) {
+        document.querySelector('#resp').setAttribute("class", codeMap[idx]);
+      }
+      document.querySelector('#status').textContent = response.status + " - " +response.statusText;
+      console.log(`HTTP status: ${response.status}`);
+      return response.json();
+    })
+    .then((json) => {
+      let time2 = performance.now();
+      loading.textContent = `Time elapsed: ${(time2-time1).toFixed(2)}ms`;
+      const response = document.querySelector('#response');
+      response.innerHTML = JSON.stringify(json, null, 2);
+      hljs.highlightBlock(response);
+
+      const imgs = document.querySelector("#img-out");
+      for (var k in json) {
+        if (k.startsWith("img")) {
+          var img = document.createElement('img');
+          if (json[k].startsWith("http")) {
+            img.src = json[k];
+          } else {
+            img.src = "data:image/png;base64,"+json[k];
+          }
+          imgs.replaceChildren(img);
+          break;
+        }
+      }
+    });
+  };
+
+  document.querySelector("form").addEventListener("submit", handleSubmit);
+
+  const loadFile = function(event, id, imgid) {
+    const preview = document.querySelector(id);
+    const img = document.querySelector(imgid);
+    const reader = new FileReader();
+    reader.onload = function() {
+      const image = new Image();
+      
+      image.title = event.target.files[0].name;
+      image.src = reader.result;
+      img.value = reader.result.slice(reader.result.indexOf(',')+1);
+      preview.replaceChildren(image);
+    };
+    reader.readAsDataURL(event.target.files[0]);
+  };
+</script>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation showVisitedLinks">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+          <style>
+            a#logo {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              font-family: 'Work Sans', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+              font-size: 30px;
+              font-weight: 300;
+              margin-top: -13px;
+              max-width: 60%;
+              text-transform: uppercase;
+              width: 226px;
+              white-space: nowrap;
+            }
+            a#logo:hover {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+            }
+            #logo svg {
+              margin-bottom: -20px;
+              margin-left: -23.5px;
+              width: 40.5%;
+            }
+            @media only all and (max-width: 59.938em) {
+              a#logo {
+                font-size: 25px;
+                margin-top: -3px;
+              }
+              #logo svg {
+                margin-bottom: -12px;
+                margin-left: -23px;
+              }
+            }
+            @media all and (-ms-high-contrast:none) {
+              /* IE11s understanding of positioning is weird at best */
+              a#logo {
+                margin-top: -58px;
+              }
+              #logo svg {
+                margin-bottom: -62px;
+              }
+            }
+          </style>
+          <a id="logo" href="/cn/">
+<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 385.874 385.874" style="enable-background:new 0 0 385.874 385.874;" xml:space="preserve">
+<path style="fill:#CAF1FF;" d="M299.228,359.475l-101.6-87.2l-50,72.4c-6.8,9.6-22,4.8-22-6.8v-101.6l-112.4-37.6
+	c-6.8-2.4-7.2-12-0.8-14.8l365.2-159.6l-65.2,330.4C311.228,360.675,304.028,363.475,299.228,359.475z"/>
+<g>
+	<path style="fill:#2b3af7;" d="M185.628,195.075c-2.4,0-4.4-0.8-6-2.8c-2.8-3.6-2.4-8.4,1.2-11.2l188-154.8
+		c3.6-2.8,8.4-2.4,11.2,1.2c2.8,3.6,2.4,8.4-1.2,11.2l-188,154.8C189.228,194.675,187.228,195.075,185.628,195.075z"/>
+	<path style="fill:#2b3af7;" d="M151.228,223.075c-2.4,0-4.8-1.2-6.4-2.8c-2.8-3.6-2.4-8.4,1.2-11.2l12.8-10.4
+		c3.6-2.8,8.4-2.4,11.2,1.2s2.4,8.4-1.2,11.2l-12.8,10.4C154.828,222.675,152.828,223.075,151.228,223.075z"/>
+	<path style="fill:#2b3af7;" d="M197.628,280.275c-1.6,0-3.2-0.4-4.8-1.6c-3.6-2.8-4.4-7.6-1.6-11.2l176-240
+		c2.8-3.6,7.6-4.4,11.2-1.6s4.4,7.6,1.6,11.2l-176,240C202.428,279.075,200.028,280.275,197.628,280.275z"/>
+	<path style="fill:#2b3af7;" d="M304.428,369.475c-3.6,0-7.2-1.2-10.4-3.6l0,0l-94.8-81.6l-44.8,65.2c-5.2,7.2-14,10.4-22.8,7.6
+		c-8.4-2.8-14-10-14-18.8v-96l-106.8-35.6c-6.4-2.4-10.4-8-10.8-14.8c-0.4-6.4,3.6-12.4,9.2-15.2l365.2-159.6c2.8-1.2,6-0.8,8.4,1.2
+		s3.6,4.8,2.8,7.6l-65.2,330.4c-1.2,5.6-5.2,10.4-10.4,12C308.028,369.075,306.028,369.475,304.428,369.475z M304.428,353.475
+		L304.428,353.475l62.4-315.6l-351.2,153.2l112.4,37.6c3.2,1.2,5.6,4,5.6,7.6v101.6c0,2.4,2,3.6,2.8,3.6c0.8,0.4,3.2,0.8,4.8-1.6
+		l50-72.4c1.2-2,3.2-3.2,5.6-3.2c2.4-0.4,4.4,0.4,6.4,2L304.428,353.475z"/>
+</g>
+</svg>
+            FuSearch
+          </a>
+        </div>
+        <div class="searchbox default-animation">
+          <label class="a11y-only" for="search-by">Search</label>
+          <i class="fas fa-search"></i>
+          <input data-search-input id="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1667471325" defer></script>
+        <script src="/js/lunr.min.js?1667471325" defer></script>
+        <script src="/js/lunr.stemmer.support.min.js?1667471325" defer></script>
+        <script src="/js/lunr.multi.min.js?1667471325" defer></script>
+        <script src="/js/lunr.en.min.js?1667471325" defer></script>
+        <script src="/js/search.js?1667471325" defer></script>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics collapsible-menu">
+          <li data-nav-id="/cn/document-understanding/" class="dd-item"><input type="checkbox" id="section-ad8475abfcce10c870a9c9898a1d7f77" aria-controls="subsections-ad8475abfcce10c870a9c9898a1d7f77" class="toggle"><label class="a11y-only toggle" for="section-ad8475abfcce10c870a9c9898a1d7f77" >Submenu 多模态文档解析</label><a href="/cn/document-understanding/">1. 多模态文档解析<i class="fas fa-check read-icon"></i></a><ul id="subsections-ad8475abfcce10c870a9c9898a1d7f77">
+          <li data-nav-id="/cn/document-understanding/cnocr/" class="dd-item"><a href="/cn/document-understanding/cnocr/">中国身份证OCR识别<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/cn/document-understanding/extract/" class="dd-item"><a href="/cn/document-understanding/extract/">网页正文抽取<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/cn/multimodal-multilingual-search/" class="dd-item"><a href="/cn/multimodal-multilingual-search/">2. 跨模态跨语种搜索<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/cn/natural-language-processing/" class="dd-item"><input type="checkbox" id="section-401b7ea7fbf423ea9357c2937111b3a2" aria-controls="subsections-401b7ea7fbf423ea9357c2937111b3a2" class="toggle"><label class="a11y-only toggle" for="section-401b7ea7fbf423ea9357c2937111b3a2" >Submenu 自然语言处理</label><a href="/cn/natural-language-processing/">3. 自然语言处理<i class="fas fa-check read-icon"></i></a><ul id="subsections-401b7ea7fbf423ea9357c2937111b3a2">
+          <li data-nav-id="/cn/natural-language-processing/translation/" class="dd-item"><a href="/cn/natural-language-processing/translation/">机器翻译<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/cn/natural-language-processing/mathsolver/" class="dd-item"><a href="/cn/natural-language-processing/mathsolver/">自然语言数字转换<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/cn/ai-generated-content/" class="dd-item"><input type="checkbox" id="section-2f353f101ddcfc6a930f52d570af617e" aria-controls="subsections-2f353f101ddcfc6a930f52d570af617e" class="toggle"><label class="a11y-only toggle" for="section-2f353f101ddcfc6a930f52d570af617e" >Submenu AI内容生成</label><a href="/cn/ai-generated-content/">4. AI内容生成<i class="fas fa-check read-icon"></i></a><ul id="subsections-2f353f101ddcfc6a930f52d570af617e">
+          <li data-nav-id="/cn/ai-generated-content/text-to-image/" class="dd-item"><a href="/cn/ai-generated-content/text-to-image/">AI绘图<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/cn/ai-generated-content/text-to-image-pre/" class="dd-item"><a href="/cn/ai-generated-content/text-to-image-pre/">AI绘图 - 测试版<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/cn/common-services/" class="dd-item parent"><input type="checkbox" id="section-84257054c9eb109dfcd7ec25af58230c" aria-controls="subsections-84257054c9eb109dfcd7ec25af58230c" class="toggle" checked><label class="a11y-only toggle" for="section-84257054c9eb109dfcd7ec25af58230c" >Submenu 常用AI服务</label><a href="/cn/common-services/">5. 常用AI服务<i class="fas fa-check read-icon"></i></a><ul id="subsections-84257054c9eb109dfcd7ec25af58230c">
+          <li data-nav-id="/cn/common-services/removebg/" class="dd-item"><a href="/cn/common-services/removebg/">去除图片背景<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/cn/common-services/docscan/" class="dd-item"><a href="/cn/common-services/docscan/">照片转扫描件<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/cn/common-services/phonenumber/" class="dd-item"><a href="/cn/common-services/phonenumber/">全球电话号码信息查询<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/cn/common-services/idcard/" class="dd-item"><a href="/cn/common-services/idcard/">中国身份证查询<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/cn/common-services/bankcard/" class="dd-item active"><a href="/cn/common-services/bankcard/">银行卡号校验查询<i class="fas fa-check read-icon"></i></a></li></ul></li>
+        </ul>
+        <div id="shortcuts">
+          <div class="nav-title">More</div>
+          <ul>
+            <li><a class="padding" href="/cn/more/showcase/"><i class='fas fa-fw fa-camera'></i> Showcases</a></li>
+            <li><a class="padding" href="/cn/tags/"><i class='fas fa-fw fa-tags'></i> Arrr! Tags</a></li>
+          </ul>
+        </div>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showVisitedLinks showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showVisitedLinks showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch showVisitedLinks">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/common-services/bankcard/">English</option>
+                    <option lang="cn" id="cn" value="/cn/common-services/bankcard/" selected>中文</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="relearn-light" value="relearn-light" selected>Relearn Light</option>
+                    <option id="relearn-dark" value="relearn-dark">Relearn Dark</option>
+                    <option id="learn" value="learn">Learn</option>
+                    <option id="neon" value="neon">Neon</option>
+                    <option id="blue" value="blue">Blue</option>
+                    <option id="green" value="green">Green</option>
+                    <option id="red" value="red">Red</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks showVisitedLinks"><a class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter">
+          <style>
+            #footer {
+              font-size: 13px;
+              height: 100px;
+              margin-left: auto;
+              margin-right: auto;
+              padding: 2rem 1rem;
+              text-align: center;
+              min-width: 230px;
+              max-width: 300px;
+            }
+            #footer p {
+              margin: 0;
+            }
+          </style>
+          <a class="github-button" href="https://github.com/fusearch/hugo-theme-relearn" data-icon="octicon-star" data-show-count="true" aria-label="Star fusearch/hugo-theme-relearn on GitHub">Star</a>
+          <a class="github-button" href="https://github.com/fusearch/hugo-theme-relearn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork fusearch/hugo-theme-relearn on GitHub">Fork</a>
+          <p>Built with <a href="https://github.com/fusearch/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          <script async src="/js/buttons.js?1667471325"></script>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1667471325" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1667471325" defer></script>
+    <script src="/js/featherlight.min.js?1667471325" defer></script>
+    <script src="/js/theme.js?1667471325" defer></script>
+  </body>
+</html>

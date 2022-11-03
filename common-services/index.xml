@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Common Services on FuSearch Playground</title>
+    <link>https://fusearch.net/common-services/</link>
+    <description>Recent content in Common Services on FuSearch Playground</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://fusearch.net/common-services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Remove Image Background</title>
+      <link>https://fusearch.net/common-services/removebg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/common-services/removebg/</guid>
+      <description>Remove Image Background Remove background from image using artificial intelligence.
+apiKey Image file: Reset Submit Response Status </description>
+    </item>
+    <item>
+      <title>Document Scanner</title>
+      <link>https://fusearch.net/common-services/docscan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/common-services/docscan/</guid>
+      <description>Document Scanner Computer vision based document scanner, take a photo of your documents and frame it.
+apiKey Image file: Reset Submit Response Status </description>
+    </item>
+    <item>
+      <title>Global Phone Carrier</title>
+      <link>https://fusearch.net/common-services/phonenumber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/common-services/phonenumber/</guid>
+      <description>Global Phonenumber Carrier Inquiry A telephone number is a sequence of digits assigned to a landline telephone subscriber station connected to a telephone line or to a wireless electronic telephony device, such as a radio telephone or a mobile telephone, or to other devices for data transmission via the public switched telephone network (PSTN) or other public and private networks.
+Playground apiKey Region Code Phonenumber Reset Submit Response Status </description>
+    </item>
+    <item>
+      <title>Resident Identity Card</title>
+      <link>https://fusearch.net/common-services/idcard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/common-services/idcard/</guid>
+      <description>Resident Identity Card The Resident Identity Card Number, also known as China&amp;rsquo;s ID Card Citizen Identity Number is 18 digits in total, which is composed of a 17 digit body code and one check code. The sequence from left to right is a six-digit address code, an eight-digit birthdate code, a three-digit sequence code, and a one-digit verification code.
+The checksum The Checksum is the final digit, which confirms the validity of the ID number from the first 17 digits, utilizing ISO 7064:1983, MOD 11-2.</description>
+    </item>
+    <item>
+      <title>Bank Card Number</title>
+      <link>https://fusearch.net/common-services/bankcard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/common-services/bankcard/</guid>
+      <description>Global Bank Card Number A payment card number, primary account number (PAN), or simply a card number, is the card identifier found on payment cards, such as credit cards and debit cards, as well as stored-value cards, gift cards and other similar cards. In some situations the card number is referred to as a bank card number. The card number is primarily a card identifier and may not directly identify the bank account number/s to which the card is/are linked by the issuing entity.</description>
+    </item>
+  </channel>
+</rss>

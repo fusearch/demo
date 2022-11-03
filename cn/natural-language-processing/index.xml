@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>自然语言处理 on FuSearch API 演示中心</title>
+    <link>https://fusearch.net/cn/natural-language-processing/</link>
+    <description>Recent content in 自然语言处理 on FuSearch API 演示中心</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://fusearch.net/cn/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>机器翻译</title>
+      <link>https://fusearch.net/cn/natural-language-processing/translation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/cn/natural-language-processing/translation/</guid>
+      <description>机器翻译 提供多语种的机器翻译服务。
+apiKey Source language [Choose one] English Chinese Target language [Choose one] English Chinese Text to translate Reset Submit Response Status </description>
+    </item>
+    <item>
+      <title>自然语言数字转换</title>
+      <link>https://fusearch.net/cn/natural-language-processing/mathsolver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/cn/natural-language-processing/mathsolver/</guid>
+      <description>基于语义解析的自然语言数字转换。 apiKey Math Question Reset Submit Response Status </description>
+    </item>
+  </channel>
+</rss>

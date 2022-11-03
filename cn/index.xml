@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FuSearch演示中心 on FuSearch API 演示中心</title>
+    <link>https://fusearch.net/cn/</link>
+    <description>Recent content in FuSearch演示中心 on FuSearch API 演示中心</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://fusearch.net/cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>多模态文档解析</title>
+      <link>https://fusearch.net/cn/document-understanding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/cn/document-understanding/</guid>
+      <description>多模态文档解析相关API。</description>
+    </item>
+    <item>
+      <title>跨模态跨语种搜索</title>
+      <link>https://fusearch.net/cn/multimodal-multilingual-search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/cn/multimodal-multilingual-search/</guid>
+      <description>多模态文档解析相关API。</description>
+    </item>
+    <item>
+      <title>自然语言处理</title>
+      <link>https://fusearch.net/cn/natural-language-processing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/cn/natural-language-processing/</guid>
+      <description>多模态文档解析相关API。</description>
+    </item>
+    <item>
+      <title>AI内容生成</title>
+      <link>https://fusearch.net/cn/ai-generated-content/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/cn/ai-generated-content/</guid>
+      <description>多模态文档解析相关API。</description>
+    </item>
+    <item>
+      <title>常用AI服务</title>
+      <link>https://fusearch.net/cn/common-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/cn/common-services/</guid>
+      <description>多模态文档解析相关API。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,135 @@
+[
+  {
+    "content": "去除图片背景抠图 自动识别输入图像中的视觉中心主体轮廓，将主体作为前景擦除背景，返回分割后的前景主体图，适用于人、动物、食物、物品等抠图场景。\napiKey Image file: Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "去除图片背景",
+    "uri": "/cn/common-services/removebg/"
+  },
+  {
+    "content": "多模态文档解析相关API。\n",
+    "description": "",
+    "tags": null,
+    "title": "多模态文档解析",
+    "uri": "/cn/document-understanding/"
+  },
+  {
+    "content": "文字生成图像 演示 apiKey 语种 [Choose one] 英文 中文 输入文字 随机数 Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "AI绘图",
+    "uri": "/cn/ai-generated-content/text-to-image/"
+  },
+  {
+    "content": "文字生成图像 - 测试版 演示 apiKey 输入文字 随机数 Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "AI绘图 - 测试版",
+    "uri": "/cn/ai-generated-content/text-to-image-pre/"
+  },
+  {
+    "content": "支持对中华人民共和国第二代身份证的识别。\n演示 apiKey Photo file: Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "中国身份证OCR识别",
+    "uri": "/cn/document-understanding/cnocr/"
+  },
+  {
+    "content": "机器翻译 提供多语种的机器翻译服务。\napiKey Source language [Choose one] English Chinese Target language [Choose one] English Chinese Text to translate Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "机器翻译",
+    "uri": "/cn/natural-language-processing/translation/"
+  },
+  {
+    "content": "照片转扫描件 通过计算机视觉技术自动将手机照片转换为扫描件。\napiKey Image file: Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "照片转扫描件",
+    "uri": "/cn/common-services/docscan/"
+  },
+  {
+    "content": "全语种网页正文抽取 实现新闻网页标题、时间、正文、图片和视频的抽取。对全球多语种站点通用，高效稳定。\n演示 apiKey URL Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "网页正文抽取",
+    "uri": "/cn/document-understanding/extract/"
+  },
+  {
+    "content": "多模态文档解析相关API。\n",
+    "description": "",
+    "tags": null,
+    "title": "跨模态跨语种搜索",
+    "uri": "/cn/multimodal-multilingual-search/"
+  },
+  {
+    "content": "全球电话号码信息查询 提供全球号码的归属地运营商等信息查询。\n演示 apiKey 区域编码 电话号码 Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "全球电话号码信息查询",
+    "uri": "/cn/common-services/phonenumber/"
+  },
+  {
+    "content": "多模态文档解析相关API。\n",
+    "description": "",
+    "tags": null,
+    "title": "自然语言处理",
+    "uri": "/cn/natural-language-processing/"
+  },
+  {
+    "content": "基于语义解析的自然语言数字转换。 apiKey Math Question Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "自然语言数字转换",
+    "uri": "/cn/natural-language-processing/mathsolver/"
+  },
+  {
+    "content": "多模态文档解析相关API。\n",
+    "description": "",
+    "tags": null,
+    "title": "AI内容生成",
+    "uri": "/cn/ai-generated-content/"
+  },
+  {
+    "content": "中华人民共和国二代身份信息查询 查询中华人民共和国二代居民身份证信息：包括身份证地区、出生年月、性别、属相星座等信息。\n演示 apiKey Resident Identity Card Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "中国身份证查询",
+    "uri": "/cn/common-services/idcard/"
+  },
+  {
+    "content": "多模态文档解析相关API。\n",
+    "description": "",
+    "tags": null,
+    "title": "常用AI服务",
+    "uri": "/cn/common-services/"
+  },
+  {
+    "content": "全球银行卡号码校验与信息查询 相关资料 alipay银行卡号接口 Payment card number 银行卡号校验 Luhn检验数字算法（Luhn Check Digit Algorithm），也叫做模数10公式，是一种简单的算法，用于验证银行卡、信用卡号码的有效性算法。对所有大型信用卡公司发行的信用卡都起作用，这些公司包括美国Express、护照、万事达卡、Discover和用餐俱乐部等。这种算法最初是在20世纪60年代由一组数学家制定，现在Luhn检验数字算法属于大众，任何人都可以使用它。\n算法：将每个奇数加倍和使它变为单个的数字，如果必要的话通过减去9和在每个偶数上加上这些值。如果此卡有效，那么结果必须是10的倍数。\n演示 apiKey Bank Card Number Reset Submit Response Status ",
+    "description": "",
+    "tags": null,
+    "title": "银行卡号校验查询",
+    "uri": "/cn/common-services/bankcard/"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Categories",
+    "uri": "/cn/categories/"
+  },
+  {
+    "content": "在这里，您可以通过网页来体验我们提供的各类人工智能模型及其API。\nInfo 如果您想了解关于我们提供API的更多信息，请查阅我们的官方文档，在体验之前您需要在我们的网站注册，获取apiKey。\n主要功能介绍 TODO\n",
+    "description": "",
+    "tags": null,
+    "title": "FuSearch演示中心",
+    "uri": "/cn/"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Tags",
+    "uri": "/cn/tags/"
+  }
+]

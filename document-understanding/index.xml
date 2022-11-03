@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Document Understanding on FuSearch Playground</title>
+    <link>https://fusearch.net/document-understanding/</link>
+    <description>Recent content in Document Understanding on FuSearch Playground</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://fusearch.net/document-understanding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chinese ID Card OCR</title>
+      <link>https://fusearch.net/document-understanding/cnocr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/document-understanding/cnocr/</guid>
+      <description>Check the basic information of Chinese ID card, including issuing region, date of birth, gender and validity.
+apiKey Photo file: Reset Submit Response Status </description>
+    </item>
+    <item>
+      <title>Web Page Content Extraction</title>
+      <link>https://fusearch.net/document-understanding/extract/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/document-understanding/extract/</guid>
+      <description>Multilingual Web Page Content Extractor A general multilingual web page content extraction. It is used to extract the content of article type web pages, such as news, blog posts, etc.
+Playground apiKey URL Reset Submit Response Status </description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FuSearch Playground</title>
+    <link>https://fusearch.net/</link>
+    <description>Recent content on FuSearch Playground</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://fusearch.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Document Understanding</title>
+      <link>https://fusearch.net/document-understanding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/document-understanding/</guid>
+      <description>Multimodal Document Understanding related APIs</description>
+    </item>
+    <item>
+      <title>Multimodal Multilingual IR</title>
+      <link>https://fusearch.net/multimodal-multilingual-search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/multimodal-multilingual-search/</guid>
+      <description>Multimodal Document Understanding related APIs</description>
+    </item>
+    <item>
+      <title>NLP Models</title>
+      <link>https://fusearch.net/natural-language-processing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/natural-language-processing/</guid>
+      <description>Multimodal Document Understanding related APIs</description>
+    </item>
+    <item>
+      <title>AI-Generated Content</title>
+      <link>https://fusearch.net/ai-generated-content/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/ai-generated-content/</guid>
+      <description>AI-generated content is when a machine creates content for you. AI content often describes written content like blog posts, marketing copy, and articles. AI content generators require some human input like a description, prompt, or parameters.</description>
+    </item>
+    <item>
+      <title>Common Services</title>
+      <link>https://fusearch.net/common-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/common-services/</guid>
+      <description>Multimodal Document Understanding related APIs</description>
+    </item>
+  </channel>
+</rss>

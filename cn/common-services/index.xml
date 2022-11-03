@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>常用AI服务 on FuSearch API 演示中心</title>
+    <link>https://fusearch.net/cn/common-services/</link>
+    <description>Recent content in 常用AI服务 on FuSearch API 演示中心</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://fusearch.net/cn/common-services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>去除图片背景</title>
+      <link>https://fusearch.net/cn/common-services/removebg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/cn/common-services/removebg/</guid>
+      <description>去除图片背景抠图 自动识别输入图像中的视觉中心主体轮廓，将主体作为前景擦除背景，返回分割后的前景主体图，适用于人、动物、食物、物品等抠图场景。
+apiKey Image file: Reset Submit Response Status </description>
+    </item>
+    <item>
+      <title>照片转扫描件</title>
+      <link>https://fusearch.net/cn/common-services/docscan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/cn/common-services/docscan/</guid>
+      <description>照片转扫描件 通过计算机视觉技术自动将手机照片转换为扫描件。
+apiKey Image file: Reset Submit Response Status </description>
+    </item>
+    <item>
+      <title>全球电话号码信息查询</title>
+      <link>https://fusearch.net/cn/common-services/phonenumber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/cn/common-services/phonenumber/</guid>
+      <description>全球电话号码信息查询 提供全球号码的归属地运营商等信息查询。
+演示 apiKey 区域编码 电话号码 Reset Submit Response Status </description>
+    </item>
+    <item>
+      <title>中国身份证查询</title>
+      <link>https://fusearch.net/cn/common-services/idcard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/cn/common-services/idcard/</guid>
+      <description>中华人民共和国二代身份信息查询 查询中华人民共和国二代居民身份证信息：包括身份证地区、出生年月、性别、属相星座等信息。
+演示 apiKey Resident Identity Card Reset Submit Response Status </description>
+    </item>
+    <item>
+      <title>银行卡号校验查询</title>
+      <link>https://fusearch.net/cn/common-services/bankcard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/cn/common-services/bankcard/</guid>
+      <description>全球银行卡号码校验与信息查询 相关资料 alipay银行卡号接口 Payment card number 银行卡号校验 Luhn检验数字算法（Luhn Check Digit Algorithm），也叫做模数10公式，是一种简单的算法，用于验证银行卡、信用卡号码的有效性算法。对所有大型信用卡公司发行的信用卡都起作用，这些公司包括美国Express、护照、万事达卡、Discover和用餐俱乐部等。这种算法最初是在20世纪60年代由一组数学家制定，现在Luhn检验数字算法属于大众，任何人都可以使用它。
+算法：将每个奇数加倍和使它变为单个的数字，如果必要的话通过减去9和在每个偶数上加上这些值。如果此卡有效，那么结果必须是10的倍数。
+演示 apiKey Bank Card Number Reset Submit Response Status </description>
+    </item>
+  </channel>
+</rss>

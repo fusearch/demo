@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI内容生成 on FuSearch API 演示中心</title>
+    <link>https://fusearch.net/cn/ai-generated-content/</link>
+    <description>Recent content in AI内容生成 on FuSearch API 演示中心</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://fusearch.net/cn/ai-generated-content/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI绘图</title>
+      <link>https://fusearch.net/cn/ai-generated-content/text-to-image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/cn/ai-generated-content/text-to-image/</guid>
+      <description>文字生成图像 演示 apiKey 语种 [Choose one] 英文 中文 输入文字 随机数 Reset Submit Response Status </description>
+    </item>
+    <item>
+      <title>AI绘图 - 测试版</title>
+      <link>https://fusearch.net/cn/ai-generated-content/text-to-image-pre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/cn/ai-generated-content/text-to-image-pre/</guid>
+      <description>文字生成图像 - 测试版 演示 apiKey 输入文字 随机数 Reset Submit Response Status </description>
+    </item>
+  </channel>
+</rss>

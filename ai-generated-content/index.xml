@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI-Generated Content on FuSearch Playground</title>
+    <link>https://fusearch.net/ai-generated-content/</link>
+    <description>Recent content in AI-Generated Content on FuSearch Playground</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://fusearch.net/ai-generated-content/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Text to Image</title>
+      <link>https://fusearch.net/ai-generated-content/text-to-image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/ai-generated-content/text-to-image/</guid>
+      <description>Text to Image Playground apiKey Language [Choose one] English Chinese Text Prompt Seed Reset Submit Response Status </description>
+    </item>
+    <item>
+      <title>Text to Image - Test</title>
+      <link>https://fusearch.net/ai-generated-content/text-to-image-pre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fusearch.net/ai-generated-content/text-to-image-pre/</guid>
+      <description>Text to Image - Test Version Playground apiKey Text Prompt Seed Reset Submit Response Status </description>
+    </item>
+  </channel>
+</rss>
