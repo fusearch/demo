@@ -42,7 +42,7 @@
     "uri": "/multimodal-multilingual-search/"
   },
   {
-    "content": "Text to Image Playground apiKey Language [Choose one] English Chinese Text Prompt Seed Reset Submit Response Status ",
+    "content": "Text to Image Playground apiKey Language [Choose one] English Chinese Text Prompt Width Height Seed Reset Submit Response Status ",
     "description": "",
     "tags": null,
     "title": "Text to Image",
